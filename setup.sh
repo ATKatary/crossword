@@ -11,5 +11,8 @@ cd src
 pwd
 git clone https://github.com/ATKatary/Crossword.git crossword
 rm -rf ../../temp
-echo "Now go into Project/src/src/settings.py and add 'restframework' and 'crossword' to INSTALLED_APPS\nAfter that run python3 manage.py runserver" 
+echo "Now go into Project/src/src/settings.py and add 'rest_framework' and 'crossword' to INSTALLED_APPS" 
+read -p "Enter done once you have have added 'rest_framework' and 'crossword' to INSTALLED_APPS in Project/src/src/settings.py: " response
+source ../venv/bin/activate
+python3 manage.py runserver 
 
