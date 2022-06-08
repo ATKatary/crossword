@@ -1,17 +1,17 @@
 """
 crossword views
 """
+from .models import Puzzle
 from rest_framework import status
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from .models import Puzzle
 
 @api_view(['POST'])
 def autocomplete(request, *args, **kwargs) -> HttpResponse:
     """
-    Gives autocomplete vertical and horizontal suggestions given a filled cell, the puzzle containing 
+    Gives autocomplete vertical and horizontal suggestions given a filled cell, the id of the puzzle containing 
     the cell, and the location of the cell in the puzzle. The suggested word must be consistent with the
     rules of the game and the vertical and horizontal sizes of the word the cell is part of. 
     Note that if there are an infinite number of possible suggestions, the behavior is up to you. 
@@ -28,7 +28,7 @@ def autocomplete(request, *args, **kwargs) -> HttpResponse:
             n _ c _ # #
       
     Inputs
-        :request: <HttpRequest> containing all the puzzle and the cellLocation for autocompletion suggesting
+        :request: <HttpRequest> containing the puzzle's id (requires puzzle exists) and the cellLocation for autocompletion suggesting
     
     Output
         :returns: Status ... 
@@ -48,7 +48,7 @@ def fetch_puzzle(request, *args, **kwargs) -> HttpResponse:
 
     Outputs
         :returns: Status … 
-                         … HTTP_200_OK if the puzzle exists and can be fetched
+                         … HTTP_200_OK if the puzzle now exists and can be fetched
                          … HTTP_403_FORBIDDEN if the puzzle does not exist or can not be fetched
     """
     raise NotImplementedError

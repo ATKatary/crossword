@@ -33,6 +33,7 @@ class Puzzle(models.Model):
         Outputs
             :returns: <Puzzle> representing the parsed puzzle txt file
         """
+        puzzle_path = f"{self.path}" #The path will always be puzzle/<name_of_puzzle>.txt, how can we get the directory we are in?
         with open(puzzle_path, 'rb') as puzzle:
             #TODO: read and parse the puzzle
             pass 
