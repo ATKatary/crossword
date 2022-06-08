@@ -10,7 +10,7 @@ cd src
 pwd
 git clone https://github.com/ATKatary/Crossword.git
 mkdir crossword 
-cp Crossword crossword
+mv -v Crossword/* crossword/
 rm -rf Crossword
 rm -rf ../Crossword
 echo "Now go into Project/src/src/settings.py and add 'restframework' and 'crossword' to INSTALLED_APPS\nAfter that run python3 manage.py runserver" 
