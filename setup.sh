@@ -6,7 +6,9 @@ virtualenv -p python3 venv
 pip3 install django
 pip3 install djangorestframework
 django-admin startproject src 
-cd src && git clone https://github.com/ATKatary/Crossword.git
+cd src 
+pwd
+git clone https://github.com/ATKatary/Crossword.git
 mkdir crossword 
 cp Crossword crossword
 rm -rf Crossword
