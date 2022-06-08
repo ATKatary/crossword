@@ -8,10 +8,7 @@ pip3 install djangorestframework
 django-admin startproject src 
 cd src 
 pwd
-git clone https://github.com/ATKatary/Crossword.git
-mkdir crossword 
-mv -v Crossword/* crossword/
-rm -rf Crossword
-rm -rf ../Crossword
+git clone https://github.com/ATKatary/Crossword.git crossword
+rm -rf ../temp
 echo "Now go into Project/src/src/settings.py and add 'restframework' and 'crossword' to INSTALLED_APPS\nAfter that run python3 manage.py runserver" 
 
