@@ -15,7 +15,7 @@ clear
 echo "Now go into Project/src/src/settings.py and add 'rest_framework' and 'crossword' to INSTALLED_APPS" 
 read -p "Enter done once you have have added 'rest_framework' and 'crossword' to INSTALLED_APPS in Project/src/src/settings.py: " response
 source ../venv/bin/activate
-python3 manage.py migrate
 python3 manage.py makemigrations
+python3 manage.py migrate
 python3 manage.py runserver 
 
