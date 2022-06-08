@@ -2,7 +2,7 @@
 A crossword puzzle game with autocompletion and hint features
 ## To get started
 ```
-git clone https://github.com/AKatary/Crossword.git         # getting the code files
+git clone https://github.com/ATKatary/Crossword.git        # getting the code files
 bash Crossword/setup.sh                                    # will setup everything for you
 ```
 ## Rules
