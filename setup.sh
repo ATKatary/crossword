@@ -17,5 +17,14 @@ read -p "Enter done once you have have added 'rest_framework' and 'crossword' to
 source ../venv/bin/activate
 python3 manage.py makemigrations
 python3 manage.py migrate
+rm src/urls.py
+touch src/urls.py 
+echo "from django.contrib import admin" >> src/urls.py
+echo "from django.urls import path, include" >> src/urls.py
+echo "urlpatterns = [" >> src/urls.py
+echo "path('admin/', admin.site.urls)," >> src/urls.py
+echo "path('', include('crossword.urls'))" >> src/urls.py
+echo "]" >> src/urls.py
+clear 
 python3 manage.py runserver 
 
