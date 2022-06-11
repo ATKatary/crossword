@@ -10,7 +10,6 @@ git clone https://github.com/ATKatary/Crossword.git temp   # getting the code fi
 bash temp/setup_mac.sh                                     # will setup everything for you
 ```
 ### Windows
-### Mac
 ```
 bash temp/setup_windows.sh                                     # will setup everything for you
 ```
