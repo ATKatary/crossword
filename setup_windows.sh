@@ -3,7 +3,7 @@ mkdir Project
 cd Project
 py -m pip install virtualenv
 py -m virtualenv -p python3 venv
-source env/Scripts/activate
+source venv/Scripts/activate
 py -m pip install django
 py -m pip install djangorestframework
 django-admin startproject src 
