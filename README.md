@@ -3,7 +3,7 @@ A crossword puzzle game with autocompletion and hint features
 ## To get started
 ### General
 ```
-git clone https://github.com/ATKatary/Crossword.git temp   # getting the code files
+git clone https://github.com/ATKatary/crossword.git temp   # getting the code files
 ```
 ### Mac
 ```
