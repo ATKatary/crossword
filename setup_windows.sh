@@ -16,7 +16,7 @@ echo "Now go into Project/src/src/settings.py and add the following to INSTALLED
 echo "'rest_framework',"
 echo "'crossword'" 
 read -p "Enter done once you finish: " response
-source ../venv/bin/activate
+source ../venv/Scripts/activate
 python manage.py makemigrations
 python manage.py migrate
 rm src/urls.py
