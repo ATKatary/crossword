@@ -1,18 +1,5 @@
 # Crossword
 A crossword puzzle game with autocompletion and hint features
-## To get started
-### General
-```
-git clone https://github.com/ATKatary/crossword.git temp   # getting the code files
-```
-### Mac
-```
-bash temp/setup_mac.sh                                     # will setup everything for you
-```
-### Windows
-```
-bash temp/setup_windows.sh                                 # will setup everything for you
-```
 ## Rules
 Given an empty 15 x 15 puzzle, fill in the cells such that words crossing vertically and horizontally are written according to clues.
 ## Example
