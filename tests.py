@@ -12,7 +12,7 @@ from django.core.exceptions import ValidationError
 url = {"puzzle": reverse("puzzle"),
        "autocomplete" : reverse("autocomplete")}
 
-class MailTests(APITestCase):
+class CrosswordTests(APITestCase):
     """
     Testing Strategy:
         Definitions
